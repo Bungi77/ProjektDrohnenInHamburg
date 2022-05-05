@@ -13,12 +13,6 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Camera _followCamera;
 
-    [SerializeField]
-    private int maxHeight = 1000;
-
-    [SerializeField]
-    private int minHeight = 5;
-
     void Update()
     {      
         movement();
