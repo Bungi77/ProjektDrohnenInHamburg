@@ -27,23 +27,35 @@ public class CameraController : MonoBehaviour
 
     void Update()
     {
+        getNewMousePosition();
+        Vector3 nextRotation = applyDampingForXRotation();
+        applyDampingBetwennRotationChanges(nextRotation);
+        
+        // Substract forward vector of the GameObject to point its forward vector to the target 
+        transform.position = _target.position - transform.forward * _distanceFromTarget;
+
+    }
+
+    void getNewMousePosition()
+    {
         float mouseX = Input.GetAxis("Mouse X") * _mouseSensitivity;
         float mouseY = Input.GetAxis("Mouse Y") * _mouseSensitivity;
 
         _rotationX += mouseY;
         _rotationY += mouseX;
+    }
 
-        // Apply clamping for x rotation 
+    Vector3 applyDampingForXRotation()
+    {
         _rotationX = Mathf.Clamp(_rotationX, -40, 40);
-
         Vector3 nextRotation = new Vector3(_rotationX, _rotationY, 0);
 
-        // Apply damping between rotation changes
+        return nextRotation;
+    }
+
+    void applyDampingBetwennRotationChanges(Vector3 nextRotation)
+    {
         _currentRotation = Vector3.SmoothDamp(_currentRotation, nextRotation, ref _smoothVelocity, _smoothTime);
         transform.localEulerAngles = _currentRotation;
-
-        // Substract forward vector of the GameObject to point its forward vector to the target 
-        transform.position = _target.position - transform.forward * _distanceFromTarget;
-
     }
 }
