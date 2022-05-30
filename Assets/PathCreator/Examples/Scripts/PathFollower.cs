@@ -28,7 +28,7 @@ namespace PathCreation.Examples
                 transform.position = pathCreator.path.GetPointAtDistance(distanceTravelled, endOfPathInstruction);
                 transform.rotation = pathCreator.path.GetRotationAtDistance(distanceTravelled, endOfPathInstruction);
             }
-            //gameObject.transform.LookAt(pathCreator.transform.position);
+            gameObject.transform.LookAt(pathCreator.transform.position);
             
         }
 
