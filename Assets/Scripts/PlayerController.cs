@@ -14,6 +14,12 @@ public class PlayerController : MonoBehaviour
     [SerializeField]
     private Camera _followCamera;
 
+    [SerializeField]
+    private float _lowerLimit = 0f;
+
+    [SerializeField]
+    private float _upperLimit = 300f;
+
     void Update()
     {      
         movement();
@@ -21,7 +27,20 @@ public class PlayerController : MonoBehaviour
 
     void movement(){
         directionMovement();
-        upDownMovement();
+        if(isInWorld(transform.position)) {upDownMovement();}
+        else if(transform.position.y <= _lowerLimit){
+           if (Input.GetKey(KeyCode.UpArrow))
+            {
+                transform.position += Vector3.up * _playerSpeed * Time.deltaTime;
+            }
+       }
+        else if(transform.position.y >= _upperLimit){
+           if (Input.GetKey(KeyCode.DownArrow))
+            {
+                transform.position += Vector3.down * _playerSpeed * Time.deltaTime;
+            }
+       }       
+
     } 
 
     void directionMovement(){
@@ -41,6 +60,11 @@ public class PlayerController : MonoBehaviour
         Vector3 movementDirection = movementInput.normalized;
 
         transform.Translate(movementDirection * _playerSpeed * Time.deltaTime);
+    }    
+    bool isInWorld(Vector3 pos){
+        return _lowerLimit < pos.y && pos.y < _upperLimit;
     }
+
+
 
 }
