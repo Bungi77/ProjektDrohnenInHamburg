@@ -1,11 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Scenemanager;
+using UnityEngine.SceneManagement;
 
 public class MainScene : MonoBehaviour
 {
-    public void MainScene();
+    public void MainSceneSkript()
     {
         SceneManager.LoadScene("Dashboard");
     }
