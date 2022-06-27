@@ -5,8 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class MainScene : MonoBehaviour
 {
-    public void MainSceneSkript()
+    public void Dashboard()
     {
-        SceneManager.LoadScene("Dashboard");
+        SceneManager.LoadScene("Menu");
     }
 }
