@@ -781,10 +781,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d900f425e23b483fa4a18f6783fccd7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerSpeed: 40
+  _playerSpeed: 400
   _rotationSpeed: 10
   _followCamera: {fileID: 1451310689}
-  _lowerLimit: 5
+  _lowerLimit: 65
   _upperLimit: 300
 --- !u!4 &767415962 stripped
 Transform:
