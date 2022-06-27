@@ -15,4 +15,5 @@ public class Dashboard : MonoBehaviour
    {
        SceneManager.LoadScene("MainSceneDroneFlight");
    }
+
 }
