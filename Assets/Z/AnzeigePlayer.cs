@@ -55,18 +55,18 @@ void Update()
 }
 IEnumerator onSight() //neue Methode
 {
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(20f);
     ImageBatHigh.SetActive(false);
     TextInfo.SetActive(false);
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(1f);
     ImageBatMiddle.SetActive(true);
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(20f);
     ImageBatMiddle.SetActive(false);
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(1f);
     ImageBatLow.SetActive(true);
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(20f);
     ImageBatLow.SetActive(false);
-    yield return new WaitForSeconds(5f);
+    yield return new WaitForSeconds(1f);
     ImageBatEmpty.SetActive(true);
     yield return new WaitForSeconds(0.5f);
     ImageBatEmpty.SetActive(false);
@@ -76,7 +76,7 @@ IEnumerator onSight() //neue Methode
     ImageBatEmpty.SetActive(false);
     yield return new WaitForSeconds(0.5f);
     ImageBatEmpty.SetActive(true);
-    yield return new WaitForSeconds(0.5f);
+    yield return new WaitForSeconds(20f);
     ImageBatEmpty.SetActive(false);
     }
 }

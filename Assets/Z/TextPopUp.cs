@@ -46,7 +46,7 @@ public class TextPopUp : MonoBehaviour
     {
         HintergrundDetails.SetActive(true);
         TextDetails.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(20f);
         HintergrundDetails.SetActive(false);
         TextDetails.SetActive(false);
     }
@@ -55,7 +55,7 @@ public class TextPopUp : MonoBehaviour
     {
         TextWarnungGebäude.SetActive(true);
         ImageWarnungHintergrund.SetActive(true);
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(20f);
         TextWarnungGebäude.SetActive(false);
         ImageWarnungHintergrund.SetActive(false);
         details = true;
@@ -87,7 +87,7 @@ public class TextPopUp : MonoBehaviour
 
     IEnumerator TextWeg()
     {
-        yield return new WaitForSeconds(10f);
+        yield return new WaitForSeconds(20f);
         TextWarnungGebäude.SetActive(false);
         ImageWarnungHintergrund.SetActive(false);
         details = true;
