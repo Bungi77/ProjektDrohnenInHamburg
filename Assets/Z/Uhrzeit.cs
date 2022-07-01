@@ -19,7 +19,7 @@ public class Uhrzeit : MonoBehaviour
     void Update()
     {
         DateTime date = DateTime.Now;
-        datetext.text = date.ToShortDateString();
+        datetext.text = date.ToLongDateString();
         zeittext.text = date.ToLongTimeString();
 
 
