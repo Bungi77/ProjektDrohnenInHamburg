@@ -10,17 +10,35 @@ public class AnzeigePlayer : MonoBehaviour
     public GameObject ImageBatLow; //neu
     public GameObject ImageBatEmpty; //neu
     public GameObject TextInfo; //neu
-
+    public GameObject dron_2_body_root;
+    public GameObject HintergrundLimit;
+    public GameObject TextLimit;
+    
 void Start() //neu Methode
 {               
+    dron_2_body_root = GameObject.Find("dron_2_body_root");
     ImageBatHigh.SetActive(true);
     ImageBatMiddle.SetActive(false);
     ImageBatLow.SetActive(false);
     ImageBatEmpty.SetActive(false);
     TextInfo.SetActive(true);
+    HintergrundLimit.SetActive(false);
+    TextLimit.SetActive(false);
     StartCoroutine (onSight());
 }
-
+void Update()
+{
+    if(dron_2_body_root.transform.position.y <= 65f)
+    {
+        HintergrundLimit.SetActive(true);
+        TextLimit.SetActive(true);
+    }
+    else
+    {
+    HintergrundLimit.SetActive(false);
+    TextLimit.SetActive(false);
+    }
+}
 IEnumerator onSight() //neue Methode
 {
     yield return new WaitForSeconds(5f);

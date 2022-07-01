@@ -15,10 +15,13 @@ public class PlayerController : MonoBehaviour
     private Camera _followCamera;
 
     [SerializeField]
-    private float _lowerLimit = 0f;
+    private float _lowerLimit = 5f;
 
     [SerializeField]
     private float _upperLimit = 300f;
+
+    [SerializeField]
+    private float _flightLimit = 65f;
 
     void Update()
     {      
@@ -27,7 +30,9 @@ public class PlayerController : MonoBehaviour
 
     void movement(){
         directionMovement();
-        if(isInWorld(transform.position)) {upDownMovement();}
+        if(isInWorld(transform.position)) {
+
+            upDownMovement();}
         else if(transform.position.y <= _lowerLimit){
            if (Input.GetKey(KeyCode.UpArrow))
             {
@@ -64,7 +69,5 @@ public class PlayerController : MonoBehaviour
     bool isInWorld(Vector3 pos){
         return _lowerLimit < pos.y && pos.y < _upperLimit;
     }
-
-
 
 }
