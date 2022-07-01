@@ -18,7 +18,7 @@ public class PlayerController : MonoBehaviour
     private float _lowerLimit = 5f;
 
     [SerializeField]
-    private float _upperLimit = 300f;
+    private float _upperLimit = 600f;
 
     [SerializeField]
     private float _flightLimit = 65f;

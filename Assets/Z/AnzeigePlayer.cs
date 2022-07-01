@@ -13,7 +13,8 @@ public class AnzeigePlayer : MonoBehaviour
     public GameObject dron_2_body_root;
     public GameObject HintergrundLimit;
     public GameObject TextLimit;
-    
+    public GameObject HoehenLimit;
+    public GameObject TextHoehenLimit;
 void Start() //neu Methode
 {               
     dron_2_body_root = GameObject.Find("dron_2_body_root");
@@ -24,6 +25,8 @@ void Start() //neu Methode
     TextInfo.SetActive(true);
     HintergrundLimit.SetActive(false);
     TextLimit.SetActive(false);
+    HoehenLimit.SetActive(false);
+    TextHoehenLimit.SetActive(false);
     StartCoroutine (onSight());
 }
 void Update()
@@ -35,24 +38,35 @@ void Update()
     }
     else
     {
-    HintergrundLimit.SetActive(false);
-    TextLimit.SetActive(false);
+        HintergrundLimit.SetActive(false);
+        TextLimit.SetActive(false);
+    }
+    
+    if(dron_2_body_root.transform.position.y > 300f)
+    {
+        HoehenLimit.SetActive(true);
+        TextHoehenLimit.SetActive(true);
+    }
+    else
+    {
+        HoehenLimit.SetActive(false);
+        TextHoehenLimit.SetActive(false);
     }
 }
 IEnumerator onSight() //neue Methode
 {
-    yield return new WaitForSeconds(20f);
+    yield return new WaitForSeconds(5f);
     ImageBatHigh.SetActive(false);
     TextInfo.SetActive(false);
-    yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(5f);
     ImageBatMiddle.SetActive(true);
-    yield return new WaitForSeconds(20f);
+    yield return new WaitForSeconds(5f);
     ImageBatMiddle.SetActive(false);
-    yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(5f);
     ImageBatLow.SetActive(true);
-    yield return new WaitForSeconds(20f);
+    yield return new WaitForSeconds(5f);
     ImageBatLow.SetActive(false);
-    yield return new WaitForSeconds(1f);
+    yield return new WaitForSeconds(5f);
     ImageBatEmpty.SetActive(true);
     yield return new WaitForSeconds(0.5f);
     ImageBatEmpty.SetActive(false);
@@ -62,7 +76,7 @@ IEnumerator onSight() //neue Methode
     ImageBatEmpty.SetActive(false);
     yield return new WaitForSeconds(0.5f);
     ImageBatEmpty.SetActive(true);
-    yield return new WaitForSeconds(20f);
+    yield return new WaitForSeconds(0.5f);
     ImageBatEmpty.SetActive(false);
     }
 }
