@@ -107,12 +107,12 @@ public class Uhr : MonoBehaviour
     {
         if(starttime > 24 || starttime < 0 || endtime > 24 || endtime < 0)
         {
-            print("Eingabe ungültig");
+            print("Eingabe ungueltig");
             correct = true;
         }
         if(starttimemin > 60 || starttimemin < 0 || endtimemin > 60 || endtimemin < 0)
         {
-            print("Eingabe ungültig");
+            print("Eingabe ungueltig");
             correct = true;
         }
 
