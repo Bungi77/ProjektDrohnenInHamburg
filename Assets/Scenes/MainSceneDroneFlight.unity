@@ -1185,8 +1185,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d19dd43e11b4d43f2a4739d8a341da0a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drone: {fileID: 767415959}
-  ga: {fileID: 0}
+  actualPath: 0
 --- !u!114 &767415961
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2603,7 +2602,7 @@ AudioListener:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1451310686}
-  m_Enabled: 1
+  m_Enabled: 0
 --- !u!20 &1451310689
 Camera:
   m_ObjectHideFlags: 0
