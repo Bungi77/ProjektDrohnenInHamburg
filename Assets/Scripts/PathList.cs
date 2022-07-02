@@ -6,14 +6,12 @@ using PathCreation;
 
 public class PathList : MonoBehaviour
 {
-    //private Dictionary<string, VertexPath> paths;
     private List<VertexPath> paths = new List<VertexPath>();
     private int actualPath;
 
     // Start is called before the first frame update
     void Start()
     {
-        //paths = new Dictionary<string, VertexPath>();
         actualPath = 0;
     }
 
@@ -21,8 +19,8 @@ public class PathList : MonoBehaviour
         get { return actualPath < paths.Count;}
     }
 
-    public void addNewPath(VertexPath path){ // Umaendern in Map mit Namen der vom User beim erstellen gesetzt werden kann und eine Liste von Vector3 enthaelt 
-        paths.Insert(paths.Count, path);
+    public void addNewPath(VertexPath path){ 
+        paths.Add(path);
     }
 
     public void setActualPath(int actualPath){
@@ -33,6 +31,10 @@ public class PathList : MonoBehaviour
         Contract.Requires(actualPath < paths.Count);
         return paths[actualPath];
         
+    }
+
+    public int getSize(){
+        return paths.Count;
     }
 
     private string pathName(){

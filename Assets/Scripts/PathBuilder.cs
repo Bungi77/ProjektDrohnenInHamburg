@@ -15,6 +15,7 @@ public class PathBuilder : MonoBehaviour
     private GameObject referencePointPathBuilder;
 
     private List<Vector3> pathCreation = new List<Vector3>();
+    private List<List<GameObject>> pathPointMarker = new List<List<GameObject>>();
 
     private PathList pathList = new PathList();
     private PathPoint pathPoint;
@@ -66,6 +67,7 @@ public class PathBuilder : MonoBehaviour
     private void addPathToPathList(){
         addActualPositionToPath();
         pathList.addNewPath(generatePath());
+        pathCreation = new List<Vector3>();
     }
 
     private VertexPath generatePath(){

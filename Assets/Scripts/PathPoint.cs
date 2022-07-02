@@ -6,12 +6,16 @@ public class PathPoint : MonoBehaviour
 {
     private GameObject pathPointObj;
 
-    public PathPoint(){
+    private Vector3 position;
+    private int belongToPath;
+
+    public PathPoint(){ // Veraenderung der einzelnen Punkte moeglich 
         pathPointObj = GameObject.Find("pathPoint");
     }
 
     // Start is called before the first frame update
     public void newPathPoint(Vector3 dronPos){
-        Instantiate(pathPointObj, dronPos, Quaternion.identity);
+        position = dronPos;
+        Instantiate(pathPointObj, position, Quaternion.identity);
     }
 }
