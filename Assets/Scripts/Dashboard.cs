@@ -11,7 +11,7 @@ public class Dashboard : MonoBehaviour
        Debug.Log("Abgemeldet"); 
    }
    
-   public void LiveAnsicht()
+   public void RoutenPlaner()
    {
        SceneManager.LoadScene("MainSceneDroneFlight");
    }
