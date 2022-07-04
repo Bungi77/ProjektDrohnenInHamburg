@@ -77,7 +77,7 @@ public class PathBuilder : MonoBehaviour
     }
 
     private bool wantToAddPath(){
-        return Input.GetKeyDown(KeyCode.Z);
+        return Input.GetKeyDown(KeyCode.F);
     }
 
 
@@ -87,13 +87,13 @@ public class PathBuilder : MonoBehaviour
     }
 
     private void wantToStartDemo(){
-        if(Input.GetKeyDown(KeyCode.F)){
+        if(Input.GetKeyDown(KeyCode.G)){
             runDemo = true;
         }
     }
 
     private void wantToStopDemo(){
-        if(Input.GetKeyDown(KeyCode.P)){
+        if(Input.GetKeyDown(KeyCode.H)){
             runDemo = false;
         }
     }
