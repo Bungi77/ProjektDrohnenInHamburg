@@ -8,9 +8,11 @@ using UnityEngine.SceneManagement;
 public class RoutenplanerText : MonoBehaviour
 {
     public static RoutenplanerText routenplanerText;
-    public TMP_InputField inputField;
+    public TMP_InputField inputFieldRoute;
+    public TMP_InputField inputFieldStart;
 
     public string routenName;
+    public string routenStart;
 
     private void Awake()
     {
@@ -27,7 +29,8 @@ public class RoutenplanerText : MonoBehaviour
 
     public void SetRoutenName()
     {
-        routenName = inputField.text;
+        routenName = inputFieldRoute.text;
+        routenStart = inputFieldStart.text;
 
         SceneManager.LoadSceneAsync("MainSceneDroneFlight");
     }

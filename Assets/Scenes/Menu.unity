@@ -3299,8 +3299,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19e69de2962aea44a8a9fc0b90984cba, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputField: {fileID: 1681766129}
+  inputFieldRoute: {fileID: 1681766129}
+  inputFieldStart: {fileID: 1369124327}
   routenName: 
+  routenStart: 
 --- !u!4 &887703472
 Transform:
   m_ObjectHideFlags: 0
