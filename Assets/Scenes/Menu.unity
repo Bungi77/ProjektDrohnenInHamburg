@@ -4683,7 +4683,7 @@ GameObject:
   - component: {fileID: 1369124328}
   - component: {fileID: 1369124327}
   m_Layer: 5
-  m_Name: Starteingabe
+  m_Name: StartEingabe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5559,13 +5559,14 @@ GameObject:
   - component: {fileID: 1517193699}
   - component: {fileID: 1517193701}
   - component: {fileID: 1517193700}
+  - component: {fileID: 1517193702}
   m_Layer: 5
   m_Name: "Routenplaner Men\xFC"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1517193699
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5631,6 +5632,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1517193698}
   m_CullTransparentMesh: 1
+--- !u!114 &1517193702
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1517193698}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19e69de2962aea44a8a9fc0b90984cba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  inputField: {fileID: 1681766129}
+  routenName: Hallo
 --- !u!1 &1520176058
 GameObject:
   m_ObjectHideFlags: 0
@@ -5778,7 +5793,7 @@ GameObject:
   - component: {fileID: 1581690892}
   - component: {fileID: 1581690891}
   m_Layer: 5
-  m_Name: Routenname
+  m_Name: RoutenName
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5914,7 +5929,7 @@ GameObject:
   - component: {fileID: 1681766130}
   - component: {fileID: 1681766129}
   m_Layer: 5
-  m_Name: Namenseingabe
+  m_Name: NamensEingabe
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
