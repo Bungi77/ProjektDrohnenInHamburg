@@ -29,7 +29,6 @@ public class RoutenplanerText : MonoBehaviour
     {
         routenName = inputField.text;
 
-        print("Hallo");
         SceneManager.LoadSceneAsync("MainSceneDroneFlight");
     }
 
