@@ -1,21 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class PathPoint : MonoBehaviour
 {
     private GameObject pathPointObj;
+    private Renderer renderer;
 
-    private Vector3 position;
-    private int belongToPath;
-
-    public PathPoint(){ // Veraenderung der einzelnen Punkte moeglich 
-        pathPointObj = GameObject.Find("pathPoint");
+    public PathPoint(Vector3 dronePos, bool startPoint, bool endPoint){ // Veraenderung der einzelnen Punkte moeglich 
+        pathPointObj = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+        pathPointObj.transform.position = dronePos;
+        renderer = pathPointObj.GetComponent<Renderer>();
+        decideColour(startPoint, endPoint);
+        
     }
 
     // Start is called before the first frame update
-    public void newPathPoint(Vector3 dronPos){
-        position = dronPos;
-        Instantiate(pathPointObj, position, Quaternion.identity);
+    public Vector3 getPathPointPosition() {
+        return pathPointObj.transform.position;
+    }
+
+    public GameObject getPathPointObject() {
+        return pathPointObj;
+    }
+
+    private void decideColour(bool startPoint, bool endPoint){
+        if (startPoint){
+            renderer.material.color = Color.green;
+        }
+        else if (endPoint){
+            renderer.material.color = Color.red;
+        } else{
+            renderer.material.color = Color.magenta;
+        }
     }
 }
