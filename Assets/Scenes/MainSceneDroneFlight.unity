@@ -320,6 +320,11 @@ MonoBehaviour:
   TextDetails: {fileID: 1039616005}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 0}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!1 &80759154
 GameObject:
   m_ObjectHideFlags: 0
@@ -847,6 +852,11 @@ MonoBehaviour:
   TextDetails: {fileID: 1039616005}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 0}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!1 &595496684
 GameObject:
   m_ObjectHideFlags: 0
@@ -1661,6 +1671,10 @@ MonoBehaviour:
   TextLimit: {fileID: 2060518491}
   HoehenLimit: {fileID: 1191616205}
   TextHoehenLimit: {fileID: 893931192}
+  Canvas: {fileID: 129044099}
+  dokument: {fileID: 0}
+  scene: {fileID: 0}
+  routenName: 
 --- !u!114 &767415967
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1822,6 +1836,11 @@ MonoBehaviour:
   TextDetails: {fileID: 1039616005}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 0}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!1 &857278418
 GameObject:
   m_ObjectHideFlags: 0
@@ -2733,6 +2752,11 @@ MonoBehaviour:
   TextDetails: {fileID: 1039616005}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 0}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!1 &1258623383
 GameObject:
   m_ObjectHideFlags: 0
@@ -3496,6 +3520,11 @@ MonoBehaviour:
   TextDetails: {fileID: 24538657}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 0}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!136 &1522611691
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -3771,6 +3800,11 @@ MonoBehaviour:
   TextDetails: {fileID: 1414353611}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 0}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!1 &1662762567
 GameObject:
   m_ObjectHideFlags: 0
@@ -4606,6 +4640,11 @@ MonoBehaviour:
   TextDetails: {fileID: 1039616005}
   HintergrundDetails: {fileID: 1662762567}
   TextWarnungAufplop: {fileID: 1628647224}
+  dron_2_body_root: {fileID: 767415959}
+  Canvas: {fileID: 0}
+  scene: {fileID: 0}
+  dokument: {fileID: 0}
+  routenName: 
 --- !u!1 &2129836360
 GameObject:
   m_ObjectHideFlags: 0

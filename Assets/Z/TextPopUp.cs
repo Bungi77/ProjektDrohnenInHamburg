@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System.IO;
 public class TextPopUp : MonoBehaviour
 {
     public GameObject TextWarnungGebäude;
@@ -10,18 +10,28 @@ public class TextPopUp : MonoBehaviour
     public GameObject TextDetails;
     public GameObject HintergrundDetails;
     public GameObject TextWarnungAufplop;
-
+    public GameObject dron_2_body_root;
+    public GameObject Canvas;
+    public MainSceneRoutenPlaner scene;
+    public FileWriter dokument;
+    public string routenName;
     private bool enter = true;
     private bool details = true;
+    string datum = "Datum: " + System.DateTime.Now + "\n";
 
     void Start()
     {
+        dron_2_body_root = GameObject.Find("dron_2_body_root");
+        Canvas = GameObject.Find("Canvas");
         TextWarnungGebäude.SetActive(false);
         ImageWarnungHintergrund.SetActive(false);
         ImageWarnungDreieck.SetActive(false);
         TextDetails.SetActive(false);
         HintergrundDetails.SetActive(false);
-        TextWarnungAufplop.SetActive(false);
+        TextWarnungAufplop.SetActive(false); 
+        scene = Canvas.GetComponent<MainSceneRoutenPlaner>();
+        routenName = scene.displayRoutenName.text;
+        dokument = dron_2_body_root.GetComponent<FileWriter>();
     }
     void Update()
     {
@@ -69,6 +79,10 @@ public class TextPopUp : MonoBehaviour
             enter = false;
             details = false;
             print("Warnung: Flugverbotzone");
+            if(!ImageWarnungDreieck.active)
+            {
+                dokument.writeText(datum + "Im Path " + routenName + " wurde ein Gebäude durchflogen." + "\n\n");
+            }
             ImageWarnungDreieck.SetActive(true);
             TextWarnungAufplop.SetActive(true);
             TextWarnungGebäude.SetActive(true);

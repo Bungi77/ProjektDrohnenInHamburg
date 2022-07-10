@@ -16,12 +16,16 @@ public class AnzeigePlayer : MonoBehaviour
     public GameObject TextLimit;
     public GameObject HoehenLimit;
     public GameObject TextHoehenLimit;
+    public GameObject Canvas;
     public FileWriter dokument;
+    public MainSceneRoutenPlaner scene;
+    public string routenName;
     string datum = "Datum: " + System.DateTime.Now + "\n";
 
 void Start() //neu Methode
 {               
     dron_2_body_root = GameObject.Find("dron_2_body_root");
+    Canvas = GameObject.Find("Canvas");
     ImageBatHigh.SetActive(true);
     ImageBatMiddle.SetActive(false);
     ImageBatLow.SetActive(false);
@@ -32,6 +36,8 @@ void Start() //neu Methode
     HoehenLimit.SetActive(false);
     TextHoehenLimit.SetActive(false);
     dokument = GetComponent<FileWriter>();
+    scene = Canvas.GetComponent<MainSceneRoutenPlaner>();
+    routenName = scene.displayRoutenName.text;
     StartCoroutine (onSight());
 }
 void Update()
@@ -40,7 +46,7 @@ void Update()
     {
         if(!TextLimit.active)
         {
-            dokument.writeText(datum + "Im Path " + "wurde das Höhenlimit unterschritten." + "\n\n");
+            dokument.writeText(datum + "Im Path " + routenName + " wurde das Höhenlimit unterschritten." + "\n\n");
         }
         HintergrundLimit.SetActive(true);
         TextLimit.SetActive(true);
@@ -55,7 +61,7 @@ void Update()
     {
         if(!TextHoehenLimit.active)
         {
-            dokument.writeText(datum + "Im Path " + "wurde das Höhenlimit überschritten." + "\n\n");
+            dokument.writeText(datum + "Im Path " + routenName + " wurde das Höhenlimit überschritten." + "\n\n");
         }        
         HoehenLimit.SetActive(true);
         TextHoehenLimit.SetActive(true);
