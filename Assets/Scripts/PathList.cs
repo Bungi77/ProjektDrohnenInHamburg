@@ -33,11 +33,17 @@ public class PathList : MonoBehaviour
         
     }
 
+    public VertexPath getPath(int index) {
+        Contract.Requires(index < paths.Count);
+        Contract.Requires(index >= 0);
+        return paths[index];
+    }
+
     public int getSize(){
         return paths.Count;
     }
 
     private string pathName(){
         return "path" + (paths.Count + 1);
-    } 
+    }
 }

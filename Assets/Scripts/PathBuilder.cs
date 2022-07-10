@@ -13,13 +13,11 @@ public class PathBuilder : MonoBehaviour
     private GameObject referencePointPathBuilder;
 
     private List<PathPoint> pathCreation = new List<PathPoint>();
-    private List<List<GameObject>> pathPointMarker = new List<List<GameObject>>();
 
     private PathList pathList = new PathList();
     private EndOfPathInstruction end;
     private bool runDemo;
     private float dstTravelled = 0;
-    int i = 0;
 
     // Start is called before the first frame update
     void Start()
