@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.IO;
 
 public class AnzeigePlayer : MonoBehaviour
 {
@@ -15,6 +16,9 @@ public class AnzeigePlayer : MonoBehaviour
     public GameObject TextLimit;
     public GameObject HoehenLimit;
     public GameObject TextHoehenLimit;
+    public FileWriter dokument;
+    string datum = "Datum: " + System.DateTime.Now + "\n";
+
 void Start() //neu Methode
 {               
     dron_2_body_root = GameObject.Find("dron_2_body_root");
@@ -27,12 +31,17 @@ void Start() //neu Methode
     TextLimit.SetActive(false);
     HoehenLimit.SetActive(false);
     TextHoehenLimit.SetActive(false);
+    dokument = GetComponent<FileWriter>();
     StartCoroutine (onSight());
 }
 void Update()
 {
     if(dron_2_body_root.transform.position.y <= 65f)
     {
+        if(!TextLimit.active)
+        {
+            dokument.writeText(datum + "Im Path " + "wurde das Höhenlimit unterschritten." + "\n\n");
+        }
         HintergrundLimit.SetActive(true);
         TextLimit.SetActive(true);
     }
@@ -44,6 +53,10 @@ void Update()
     
     if(dron_2_body_root.transform.position.y > 300f)
     {
+        if(!TextHoehenLimit.active)
+        {
+            dokument.writeText(datum + "Im Path " + "wurde das Höhenlimit überschritten." + "\n\n");
+        }        
         HoehenLimit.SetActive(true);
         TextHoehenLimit.SetActive(true);
     }
