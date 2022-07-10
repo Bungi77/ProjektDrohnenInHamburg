@@ -1,0 +1,20 @@
+Path log 
+
+Datum: 10.07.2022 20:09:57
+Im Path wurde das Höhenlimit unterschritten.
+
+Datum: 10.07.2022 20:10:32
+Im Path wurde das Höhenlimit unterschritten.
+
+Datum: 10.07.2022 20:11:11
+Im Path wurde das Höhenlimit unterschritten.
+
+Datum: 10.07.2022 20:11:11
+Im Path wurde das Höhenlimit unterschritten.
+
+Datum: 10.07.2022 20:11:11
+Im Path wurde das Höhenlimit unterschritten.
+
+Datum: 10.07.2022 20:12:54
+Im Path wurde das Höhenlimit unterschritten.
+
