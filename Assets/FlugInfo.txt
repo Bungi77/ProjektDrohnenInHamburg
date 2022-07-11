@@ -282,3 +282,72 @@ Im Path Name der Route wurde das Höhenlimit unterschritten.
 Datum: 11.07.2022 12:34:39
 Im Path Name der Route wurde das Höhenlimit unterschritten.
 
+Datum: 11.07.2022 12:39:08
+Im Path Name der Route wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:39:27
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:39:27
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:39:27
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:39:27
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:49:27
+Im Path Name der Route wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:50:45
+Im Path 11. Juli 2022 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:50:45
+Im Path 11. Juli 2022 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:50:45
+Im Path 11. Juli 2022 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 12:58:46
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 12:58:46
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 13:01:10
+Im Path Name der Route wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde das Höhenlimit unterschritten.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
+Datum: 11.07.2022 13:01:36
+Im Path 5 wurde ein Gebäude durchflogen.
+
